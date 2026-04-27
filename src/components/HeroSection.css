@@ -12,7 +12,7 @@
     scroll-snap-align: none;
 }
 
-/* Side decorative images */
+/* Side decorative elements with gradient */
 .hero-side {
     position: absolute;
     top: 0;
@@ -20,22 +20,17 @@
     width: 22%;
     z-index: 1;
     overflow: hidden;
-}
-
-.hero-side img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.95;
+    background: linear-gradient(135deg, rgba(139, 90, 43, 0.15) 0%, rgba(184, 134, 11, 0.1) 100%);
 }
 
 .hero-side-left {
     left: 0;
+    border-right: 2px solid rgba(184, 134, 11, 0.2);
 }
 
 .hero-side-right {
     right: 0;
-    transform: scaleX(-1); /* mirror the image for right side */
+    border-left: 2px solid rgba(184, 134, 11, 0.2);
 }
 
 .hero-bg {
@@ -44,18 +39,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background: linear-gradient(135deg, #8b9a9a 0%, #6b7a7a 50%, #8b5a2b 100%);
     z-index: 2;
     padding: 20px;
 }
 
 .hero-fullimg {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain; /* ensure full image is visible */
-    object-position: center;
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(184, 134, 11, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(139, 90, 43, 0.1) 0%, transparent 50%);
 }
 
 .hero-copy {
