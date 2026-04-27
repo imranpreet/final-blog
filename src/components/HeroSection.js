@@ -1,23 +1,19 @@
 import React from 'react';
 import './HeroSection.css';
-import heroBg from '../save.jpg';
-import sideImg from '../2side.jpg';
 
 const HeroSection = () => {
     return (
         <section className="hero" role="img" aria-label="Hero background image">
-            {/* Left side decorative image */}
+            {/* Left side decorative element */}
             <div className="hero-side hero-side-left">
-                <img src={sideImg} alt="" />
             </div>
             
             <div className="hero-bg">
-                <img className="hero-fullimg" src={heroBg} alt="Hero background" />
+                <div className="hero-fullimg"></div>
             </div>
 
-            {/* Right side decorative image */}
+            {/* Right side decorative element */}
             <div className="hero-side hero-side-right">
-                <img src={sideImg} alt="" />
             </div>
 
             <div className="hero-copy">
