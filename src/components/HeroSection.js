@@ -1,9 +1,10 @@
 import React from 'react';
 import './HeroSection.css';
-import heroBg from '../save.jpg';
-import sideImg from '../2side.jpg';
 
 const HeroSection = () => {
+    const heroBg = '/save.jpg';
+    const sideImg = '/2side.jpg';
+    
     return (
         <section className="hero" role="img" aria-label="Hero background image">
             {/* Left side decorative image */}
