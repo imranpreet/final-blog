@@ -15,3 +15,11 @@ dist/
 *.swp
 *.swo
 simran-product/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.psd
+*.mp4
+*.zip
+
