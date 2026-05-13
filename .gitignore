@@ -23,3 +23,12 @@ simran-product/
 *.mp4
 *.zip
 
+
+# Allow images and assets inside the public folder to be tracked (needed for deployment)
+!public/
+!public/**.jpg
+!public/**.jpeg
+!public/**.png
+!public/**.gif
+!public/**.svg
+

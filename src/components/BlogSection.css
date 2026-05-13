@@ -45,8 +45,9 @@ html, body {
 }
 
 .blog-container {
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
+    padding: 0 8px;
 }
 
 .section-header {
@@ -456,13 +457,13 @@ html, body {
     flex-direction: column;
     gap: 40px;
     padding: 40px 0;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
 .blog-list-item-wrapper {
     width: 100%;
-    padding: 30px;
+    padding: 20px 6px;
     background: transparent;
     border-radius: 12px;
     box-shadow: none;

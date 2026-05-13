@@ -1,10 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import BlogSection from './components/BlogSection';
 import ArticlePage from './components/ArticlePage';
-import Footer from './components/Footer';
 import './App.css';
 
 function HomePage() {
@@ -12,7 +10,6 @@ function HomePage() {
         <>
             <HeroSection />
             <BlogSection />
-            <Footer />
         </>
     );
 }
@@ -21,7 +18,6 @@ function App() {
     return (
         <Router>
             <div className="app">
-                <Header />
                 <main>
                     <Routes>
                         <Route path="/" element={<HomePage />} />
